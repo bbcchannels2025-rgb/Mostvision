@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#121212">
+
+    <!-- شريط العرض العلوي -->
+    <TextView
+        android:id="@+id/tvAppTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="رؤية"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- عين الشارينجان التفاعلية في المنتصف (تثبت في مكانها وتنقلك لآخر فيديو عند الضغط عليها) -->
+    <ImageView
+        android:id="@+id/imgSharingan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/sharingan_background"
+        android:contentDescription="شارينجان رؤية"
+        android:focusable="true"
+        android:clickable="true"
+        android:scaleType="centerCrop" />
+
+    <!-- زر عائم أسفل يمين الشاشة لتشغيل آخر فيديو تم تشغيله -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabLastVideo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="24dp"
+        android:backgroundTint="#D32F2F"
+        android:contentDescription="آخر فيديو"
+        android:src="@android:drawable/ic_media_play"
+        app:tint="#FFFFFF" />
+
+</RelativeLayout>
