@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">رؤية</string>
+    <string name="last_played">آخر فيديو تم تشغيله</string>
+    <string name="local_videos">محلي</string>
+    <string name="music_player">موسيقى</string>
+    <string name="transfer">Transfer</string>
+    <string name="profile">أنا</string>
+</resources>
